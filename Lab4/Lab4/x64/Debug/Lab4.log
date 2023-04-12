@@ -1,0 +1,9 @@
+﻿  Lab4.c
+E:\leonnik\Lab\Lab4\Lab4\TreeAPI.h(9,5): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\leonnik\Lab\Lab4\Lab4\TreeAPI.h(18,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\leonnik\Lab\Lab4\Lab4\TreeAPI.h(28,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\leonnik\Lab\Lab4\Lab4\TreeAPI.h(60,30): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+E:\leonnik\Lab\Lab4\Lab4\TreeAPI.h(89,17): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\leonnik\Lab\Lab4\Lab4\Lab4.c(9,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\leonnik\Lab\Lab4\Lab4\Lab4.c(13,10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Lab4.vcxproj -> E:\leonnik\Lab\Lab4\x64\Debug\Lab4.exe
