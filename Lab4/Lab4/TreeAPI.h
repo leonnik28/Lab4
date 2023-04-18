@@ -11,7 +11,7 @@ void file_open(errno_t err) {
     }
 }
 
-Node* create_node(char* word) {
+Node* create_node(const char* word) {
     Node* new_node = (Node*)malloc(sizeof(Node));
     new_node->question = (char*)malloc(strlen(word) + 1);
     strncpy_s(new_node->question, strlen(word) + 2, word, strlen(word) + 1);
@@ -101,12 +101,12 @@ void traverse(Node* node) {
         }
         int check = 0;
         if (strcmp(word, "yes") == 0) {
-            check = check_r(&(node));
+            check = check_r(&node);
             if (check == 1) printf("I guessed! Good luck next time :)");
             traverse(node->right);
         }
         else {
-            check = check_l(&(node));
+            check = check_l(&node);
             if (check == 1) return;
             traverse(node->left);
         }
