@@ -23,7 +23,7 @@ Node* create_node(const char* word) {
 void new_node_l(Node** node) {
     printf("I do not know the answer. What was it? \n");
     char new_word[100];
-    scanf_s("%s", new_word);
+    scanf_s("%s", new_word, _countof(new_word));
     getchar();
     (*node)->right = create_node(new_word);
     printf("How is %s different from %s?\n", (*node)->right->question, (*node)->question);
@@ -94,7 +94,7 @@ void traverse(Node* node) {
     if (node->question != NULL) {
         printf("%s?\n", node->question);
         char word[4];
-        while (!scanf_s("%3s", word) || (strcmp(word, "yes") != 0 && strcmp(word, "no") != 0)) {
+        while (!scanf_s("%3s", word, _countof(word)) || (strcmp(word, "yes") != 0 && strcmp(word, "no") != 0)) {
             printf_s("Invalid answer\n");
             rewind(stdin);
             printf_s("Your answer: ");
